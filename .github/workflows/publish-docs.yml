@@ -33,7 +33,7 @@ jobs:
         deploy_key: ${{ secrets.ACTIONS_DOCUMENTATION_DEPLOY_KEY }}
         publish_branch: master
         publish_dir: ./docs/build/html
-        external_repository: bluesky/bluesky.github.io
+        external_repository: bluesky-sandbox/bluesky-sandbox.github.io
         destination_dir: ${GITHUB_REPOSITORY#*/}  # just the repo name, without the "bluesky/"
         keep_files: true  # Keep old files.
         force_orphan: false  # Keep git history.
